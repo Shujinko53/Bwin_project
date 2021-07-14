@@ -2,18 +2,58 @@
     position: relative;
 
     min-height: 100vh;
+    padding-top: 180px;
 
-    background: url('../../img/main_bg.jpg') 50%/cover no-repeat;
+    background: url('../img/main_bg.jpg') 50%/cover no-repeat;
+
+    &__logo {
+        position: absolute;
+        top: 66px;
+        left: 120px;
+
+        width: 180px;
+        height: 60px;
+
+        cursor: pointer;
+    }
 
     &__title {
-        color: #e3e3e5;
+        width: 527px;
+
+        color: $main_color;
+
+        span {
+            font-family: 'DrukCyr', sans-serif;
+            font-weight: 900;
+
+            &:first-child {
+                font-size: 115px;
+                line-height: 150px;
+                color: $second_color;
+            }
+            &:nth-child(2) {
+                font-size: 67px;
+                line-height: 67px;
+                color: $main_color;
+            }
+            &:nth-child(3) {
+                font-size: 47px;
+                line-height: 47px;
+                color: $main_color;
+            }
+        }
     }
 
-    &__subtitle {
-        
-    }
+    &__text {
+        width: 506px;
 
-    &__link {
-        
+        font-size: 27px;
+        line-height: 32px;
+        color: $main_color;
+
+        span {
+            font-size: 22.5px;
+            line-height: 26px;
+        }
     }
 }
