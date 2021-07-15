@@ -17,18 +17,41 @@
         cursor: pointer;
     }
 
-    &__title {
-        width: 527px;
+    &__container {
+        margin-left: 120px;
+    }
 
+    &__text {
+        position: relative;
+
+        width: 530px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -75px;
+            left: 100%;
+
+            width: 730px;
+            height: 587px;
+
+            background: url('../img/main_img.png') 50%/cover no-repeat;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
         color: $main_color;
 
         span {
-            font-family: 'DrukCyr', sans-serif;
+            padding-right: 30px;
+
+            font-family: 'Druk Wide', sans-serif;
             font-weight: 900;
 
             &:first-child {
                 font-size: 115px;
-                line-height: 150px;
+                line-height: 120px;
                 color: $second_color;
             }
             &:nth-child(2) {
@@ -44,8 +67,8 @@
         }
     }
 
-    &__text {
-        width: 506px;
+    &__subtitle  {
+        padding-right: 20px;
 
         font-size: 27px;
         line-height: 32px;
