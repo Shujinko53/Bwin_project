@@ -1,0 +1,26 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 25px 0;
+
+    background-color: #0e0e0e;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 120px;
+    }
+
+    &__link {
+        font-size: 23px;
+        line-height: 27px;
+        font-weight: 400;
+        text-decoration: underline;
+        color: $main_color;
+
+        cursor: pointer;
+    }
+}

@@ -2,7 +2,6 @@
     position: relative;
 
     min-height: 100vh;
-    padding-top: 180px;
 
     background: url('../img/main_bg.jpg') 50%/cover no-repeat;
 
@@ -17,19 +16,21 @@
         cursor: pointer;
     }
 
-    &__container {
+    &__wrapper {
         margin-left: 120px;
+        padding-top: 180px;
     }
 
     &__text {
         position: relative;
 
         width: 530px;
+        margin-bottom: 50px;
 
         &:before {
             content: "";
             position: absolute;
-            top: -75px;
+            top: -35px;
             left: 100%;
 
             width: 730px;
@@ -40,7 +41,7 @@
     }
 
     &__title {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         color: $main_color;
 
         span {
@@ -51,27 +52,36 @@
 
             &:first-child {
                 font-size: 115px;
-                line-height: 120px;
+                line-height: 150px;
                 color: $second_color;
             }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                font-family: 'DrukTextWide';
+                font-weight: 900;
+                color: $main_color;
+            }
+
             &:nth-child(2) {
                 font-size: 67px;
                 line-height: 67px;
-                color: $main_color;
+                
             }
+            
             &:nth-child(3) {
                 font-size: 47px;
                 line-height: 47px;
-                color: $main_color;
             }
         }
     }
 
     &__subtitle  {
+        margin-bottom: 27px;
         padding-right: 20px;
 
         font-size: 27px;
-        line-height: 32px;
+        line-height: 31px;
         color: $main_color;
 
         span {

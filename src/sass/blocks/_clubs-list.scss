@@ -1,0 +1,13 @@
+.clubs-list {
+    display: flex;
+    align-items: center;
+    width: 250px;
+
+    list-style: none;
+
+    li {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+}
