@@ -17,6 +17,31 @@
     }
 }
 
+@media (max-width: 768px) {
+    .clubs-list {
+        display: flex;
+        align-items: center;
+        width: 150px;
+    
+        list-style: none;
+    
+        li {
+            display: flex;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+    
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media (max-width: 560px) {
     .clubs-list {
         display: flex;

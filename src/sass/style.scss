@@ -1,6 +1,10 @@
 @import 'libs/fonts';
 @import 'base/variables';
 
+body {
+    position: relative;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;

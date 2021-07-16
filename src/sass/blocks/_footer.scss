@@ -11,6 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: 0 25px;
     }
 
@@ -25,20 +26,32 @@
     }
 }
 
+@media (max-width: 768px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+
+        padding: 15px 0;
+    
+        &__wrapper {
+            margin: 0 50px;
+        }
+    
+        &__link {
+            font-size: 15px;
+            line-height: 17px;
+        }
+    }
+}
+
 @media (max-width: 560px) {
     .footer {
         bottom: 0;
-        left: 0;
+
         padding: 15px 0;
     
-        background-color: #0e0e0e;
-    
         &__wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin: 0 25px;
+            margin: 0 15px;
         }
     
         &__link {
