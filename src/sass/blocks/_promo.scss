@@ -14,6 +14,10 @@
         height: 60px;
 
         cursor: pointer;
+
+        img {
+            width: 100%;
+        }
     }
 
     &__wrapper {
@@ -29,6 +33,7 @@
 
         &:before {
             content: "";
+
             position: absolute;
             top: -35px;
             left: 100%;
@@ -82,11 +87,102 @@
 
         font-size: 27px;
         line-height: 31px;
+        letter-spacing: 0.5px;
         color: $main_color;
 
         span {
             font-size: 22.5px;
             line-height: 26px;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .promo {
+        &__logo {
+            top: 21px;
+            left: 21px;
+    
+            width: 66px;
+            height: 22px;
+        }
+
+        &__wrapper {
+            margin: 0;
+            padding-top: 55px;
+        }
+
+        &__text {
+            width: 235px;
+            margin: 0 auto;
+
+            text-align: center;
+    
+            &:before {
+                content: "";
+                position: absolute;
+                top: calc(100% + 27px);
+                left: 50%;
+    
+                width: 290px;
+                height: 233px;
+    
+                background: url('../img/main_img.png') 50%/cover no-repeat;
+
+                transform: translateX(-50%);
+            } 
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            color: $main_color;
+    
+            span {
+                padding-right: 0;
+    
+                font-family: 'Druk Wide', sans-serif;
+                font-weight: 700;
+    
+                &:first-child {
+                    font-size: 53px;
+                    line-height: 70px;
+                    color: $second_color;
+                }
+    
+                &:nth-child(2),
+                &:nth-child(3) {
+                    font-family: 'DrukTextWide';
+                    font-weight: 700;
+                    color: $main_color;
+                }
+    
+                &:nth-child(2) {
+                    font-size: 31px;
+                    line-height: 31px;
+                    
+                }
+                
+                &:nth-child(3) {
+                    font-size: 22px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        &__subtitle  {
+            margin-bottom: 27px;
+            padding-right: 0;
+    
+            font-size: 12.5px;
+            line-height: 14.5px;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            color: $main_color;
+    
+            span {
+                font-size: 10.5px;
+                line-height: 12px;
+            }
         }
     }
 }

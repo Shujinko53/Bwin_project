@@ -11,7 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 120px;
+        margin: 0 25px;
     }
 
     &__link {
@@ -22,5 +22,34 @@
         color: $main_color;
 
         cursor: pointer;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer {
+        padding: 10px 0;
+    
+        background-color: #0e0e0e;
+    
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0 25px;
+        }
+    
+        &__link {
+            order: -1;
+
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            width: 100%;
+            margin-bottom: 10px;
+
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 }
